@@ -1,4 +1,4 @@
-<h1 align="center">Hi 👋, Hola soy Paul Villacis</h1>
+<h1 align="center"> Hola soy Paul Villacis</h1>
 <h3 align="center"> 👨‍🎓 Estudiante de ingeniería en software.</h3>
 
 🔭 Actualmente estoy trabajando en proyectos que desarrollamos a lo largo de mi carrera.
