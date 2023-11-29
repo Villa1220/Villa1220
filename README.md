@@ -1,13 +1,13 @@
-<h1 align="center">Hi 👋, I'm Paul Villacis</h1>
-<h3 align="center">Estudiante de ingeniería en software.</h3>
+<h1 align="center">Hi 👋, Hola soy Paul Villacis</h1>
+<h3 align="center"> 👨‍🎓 Estudiante de ingeniería en software.</h3>
 
-- 🔭 I’m currently working on **en proyectos que desarrollamos a lo largo de mi carrera.**
+🔭 Actualmente estoy trabajando en proyectos que desarrollamos a lo largo de mi carrera.
+🌱 Estoy aprendiendo Java, HTML, JavaScript, MySQL, entre otros.
+⚡ Dato curioso: ¡Cada día me esfuerzo por aprender más!
 
-- 🌱 I’m currently learning **Java, HTML, JavaScript, MySQL, entre otros**
-
-- 📫 How to reach me **Teléfono: 0984266777 Correo electrónico: pvillacis7225@uta.edu.ec**
-
-<h3 align="left">Connect with me:</h3>
+<h3 align="left">📫 Puedes contactarme a través de:</h3>
+  - Teléfono: 0984266777
+   - Correo electrónico: pvillacis7225@uta.edu.ec
 <p align="left">
 </p>
 
