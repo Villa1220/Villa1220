@@ -6,8 +6,10 @@
 ⚡ Dato curioso: ¡Cada día me esfuerzo por aprender más!
 
 <h3 align="left">📫 Puedes contactarme a través de:</h3>
-  - Teléfono: 0984266777
-   - Correo electrónico: pvillacis7225@uta.edu.ec
+<ul align="left">
+  <li>Teléfono: 0984266777</li>
+  <li>Correo electrónico: pvillacis7225@uta.edu.ec</li>
+</ul>
 <p align="left">
 </p>
 
