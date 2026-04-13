@@ -1,0 +1,109 @@
+@import "tailwindcss";
+
+/* ─── Dark variant via class ─────────────────────────────────────────────── */
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* ─── Design System Tokens ───────────────────────────────────────────────── */
+@theme {
+  /* Fuente Geist (variable CSS inyectada desde layout.tsx) */
+  --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-geist-mono), ui-monospace, monospace;
+
+  /* Paleta Zinc – modo oscuro elegante */
+  --color-background: #09090b;
+  --color-surface:    #18181b;
+  --color-surface-2:  #27272a;
+  --color-border:     #3f3f46;
+  --color-muted:      #71717a;
+  --color-foreground: #fafafa;
+  --color-foreground-muted: #a1a1aa;
+
+  /* Paleta Slate – acentos y estados */
+  --color-accent:       #6366f1;
+  --color-accent-light: #818cf8;
+  --color-accent-dark:  #4f46e5;
+
+  /* Espaciado base 8px */
+  --spacing-18: 4.5rem;
+  --spacing-22: 5.5rem;
+  --spacing-26: 6.5rem;
+  --spacing-30: 7.5rem;
+
+  /* Radio de bordes */
+  --radius-card: 1.25rem;
+  --radius-pill: 9999px;
+
+  /* Sombras */
+  --shadow-glow: 0 0 40px -8px rgb(99 102 241 / 0.35);
+  --shadow-card: 0 4px 32px -8px rgb(0 0 0 / 0.6);
+
+  /* Duración de transiciones */
+  --duration-fast:   150ms;
+  --duration-normal: 300ms;
+  --duration-slow:   500ms;
+}
+
+/* ─── Base Styles ─────────────────────────────────────────────────────────── */
+@layer base {
+  :root {
+    color-scheme: dark;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    font-family: var(--font-sans);
+    line-height: 1.6;
+  }
+
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  /* Selección de texto con acento */
+  ::selection {
+    background-color: rgb(99 102 241 / 0.3);
+    color: var(--color-foreground);
+  }
+
+  /* Scrollbar personalizada */
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: var(--color-background);
+  }
+  ::-webkit-scrollbar-thumb {
+    background: var(--color-border);
+    border-radius: 3px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--color-muted);
+  }
+}
+
+/* ─── Utilidades personalizadas ───────────────────────────────────────────── */
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .text-pretty {
+    text-wrap: pretty;
+  }
+
+  .grid-bento {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 1rem;
+  }
+}
