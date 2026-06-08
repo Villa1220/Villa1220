@@ -66,7 +66,7 @@
 </div>
 
 <br/>
-## 🌐 Live Production Deployments & Active Demos
+🌐 Live Production Deployments & Active Demos
 
 <div align="center">
 <table width="100%">
