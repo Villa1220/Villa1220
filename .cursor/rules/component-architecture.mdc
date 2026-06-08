@@ -1,0 +1,24 @@
+---
+description: Component and directory architecture for the Next.js App Router portfolio
+globs: **/*.{ts,tsx}
+alwaysApply: false
+---
+
+# Component & Project Architecture
+
+## Directory Structure
+```
+├── app/         # Pages, layouts, routes (Server Components by default)
+├── components/  # UI atoms and complex organisms
+├── hooks/       # Extracted client-side logic
+├── utils/       # Helpers and formatters
+└── types/       # Global TypeScript contracts
+```
+
+## Rules
+- **Single responsibility:** small, focused components — no 500-line monoliths.
+- **Server-first:** keep components as Server Components; add `"use client"` only when
+  interactivity/state/effects are required, and isolate that to the smallest leaf.
+- **Logic in hooks:** extract data fetching, state machines and side effects into `hooks/`.
+- **Dynamic import** heavy client-only components to protect Core Web Vitals.
+- **No prop drilling chaos:** compose, or use context for genuinely shared state only.
