@@ -1,12 +1,6 @@
 <h1 align="center">¡Hola! Soy Paul Villacis 👋</h1>
 <h3 align="center">🚀 Ingeniero de Software | Full-Stack Developer & Automation Enthusiast</h3>
 
-<p align="center">
-  <a href="https://github.com/ryo-ma/github-profile-trophy">
-    <img src="https://github-profile-trophy.vercel.app/?username=Villa1220&theme=radical&column=7" alt="Trophies" />
-  </a>
-</p>
-
 ---
 
 ### 👨‍💻 Sobre Mí
@@ -65,8 +59,7 @@ Ingeniero de Software de la **Universidad Técnica de Ambato (UTA)**. Me apasion
 ### 📊 Estadísticas y Actividad de GitHub
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=Villa1220&show_icons=true&theme=radical&include_all_commits=true&count_private=true" alt="GitHub Stats" width="48%" />
-  
+
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=Villa1220&theme=radical" alt="GitHub Streak" width="48%" />
 </p>
 
@@ -74,9 +67,7 @@ Ingeniero de Software de la **Universidad Técnica de Ambato (UTA)**. Me apasion
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=Villa1220&theme=radical" alt="Gráfico de Actividad de Paul" width="100%" />
 </p>
 
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Villa1220&layout=compact&theme=radical&hide_border=false" alt="Top Languages" width="60%" />
-</p>
+
 
 ---
 
