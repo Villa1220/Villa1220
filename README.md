@@ -17,7 +17,7 @@
 <br/>
 
 <div align="center">
-◈ &nbsp; <b>PROFESSIONAL IDENTITY PROFILE</b> &nbsp; ◈
+◈ &nbsp; <b>IDENTITY PROFILE</b> &nbsp; ◈
 <br/><br/>
 
 <table width="100%">
