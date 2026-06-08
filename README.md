@@ -66,6 +66,53 @@
 </div>
 
 <br/>
+## 🌐 Live Production Deployments & Active Demos
+
+<div align="center">
+<table width="100%">
+  <tr>
+    <td width="50%" align="center" valign="top">
+      <h4>🚍 ChasquiBus Enterprise Platform</h4>
+      <a href="https://chasquibus-web.vercel.app/auth/login" target="_blank">
+        <img src="https://api.microlink.io/?url=https%3A%2F%2Fchasquibus-web.vercel.app%2Fauth%2Flogin&screenshot=true&embed=screenshot.url&style=dark" alt="ChasquiBus Preview" width="95%" style="border-radius: 8px; border: 1px solid #302B63;" />
+      </a>
+      <br/><br/>
+      <img src="https://img.shields.io/badge/Status-Active_Live-00F2FE?style=flat-square" />
+      <img src="https://img.shields.io/badge/Deployment-Vercel-000000?style=flat-square&logo=vercel&logoColor=white" />
+    </td>
+    <td width="50%" align="center" valign="top">
+      <h4>🌿 Ayalma Corporate Landing Page</h4>
+      <a href="https://pagina-ayalma.vercel.app/" target="_blank">
+        <img src="https://api.microlink.io/?url=https%3A%2F%2Fpagina-ayalma.vercel.app%2F&screenshot=true&embed=screenshot.url" alt="Ayalma Preview" width="95%" style="border-radius: 8px; border: 1px solid #302B63;" />
+      </a>
+      <br/><br/>
+      <img src="https://img.shields.io/badge/Status-Active_Live-00F2FE?style=flat-square" />
+      <img src="https://img.shields.io/badge/Deployment-Vercel-000000?style=flat-square&logo=vercel&logoColor=white" />
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" align="center" valign="top">
+      <br/><h4>🩺 Clinical Dashboard — Doctor Frontend</h4>
+      <a href="https://doctor-fronted.vercel.app/login" target="_blank">
+        <img src="https://api.microlink.io/?url=https%3A%2F%2Fdoctor-fronted.vercel.app%2Flogin&screenshot=true&embed=screenshot.url" alt="Doctor Frontend Preview" width="95%" style="border-radius: 8px; border: 1px solid #302B63;" />
+      </a>
+      <br/><br/>
+      <img src="https://img.shields.io/badge/Status-Active_Live-00F2FE?style=flat-square" />
+      <img src="https://img.shields.io/badge/Deployment-Vercel-000000?style=flat-square&logo=vercel&logoColor=white" />
+    </td>
+    <td width="50%" align="center" valign="top">
+      <br/><h4>🤖 Conversor IA — Inteligencia Aplicada</h4>
+      <a href="https://conversor-ia-villacis-paul.onrender.com/" target="_blank">
+        <img src="https://api.microlink.io/?url=https%3A%2F%2Fconversor-ia-villacis-paul.onrender.com%2F&screenshot=true&embed=screenshot.url" alt="Conversor IA Preview" width="95%" style="border-radius: 8px; border: 1px solid #302B63;" />
+      </a>
+      <br/><br/>
+      <img src="https://img.shields.io/badge/Status-Active_Live-00F2FE?style=flat-square" />
+      <img src="https://img.shields.io/badge/Deployment-Render-D3A13B?style=flat-square&logo=render&logoColor=white" />
+    </td>
+  </tr>
+</table>
+</div>
+
 
 ## 💻 Enterprise Tech Stack
 
