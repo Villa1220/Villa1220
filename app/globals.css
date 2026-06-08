@@ -1,0 +1,134 @@
+@import "tailwindcss";
+
+/* Tailwind v4 dark mode: activated by the `.dark` class on <html> (next-themes). */
+@custom-variant dark (&:where(.dark, .dark *));
+
+/*
+  Design System: Dual-mode Luxury Tech
+  Color tokens live in :root (light) and .dark (dark) and are consumed via
+  Tailwind utilities (bg-background, text-accent...). Never hardcode hex in components.
+*/
+
+:root {
+  /* Light — refined editorial */
+  --background: #f7f8fa;
+  --surface: #ffffff;
+  --surface-elevated: #ffffff;
+  --border: #e6e9ef;
+  --foreground: #0b0f17;
+  --muted: #586071;
+  --accent: #0a8fa3;
+  --accent-strong: #067687;
+  --accent-soft: rgba(10, 143, 163, 0.1);
+  --glow: rgba(10, 143, 163, 0.12);
+  --grid: rgba(11, 15, 23, 0.04);
+}
+
+.dark {
+  /* Dark — luxury tech */
+  --background: #0d1117;
+  --surface: #0f141b;
+  --surface-elevated: #161b22;
+  --border: #21262d;
+  --foreground: #e6edf3;
+  --muted: #8b949e;
+  --accent: #00f2fe;
+  --accent-strong: #5cf7ff;
+  --accent-soft: rgba(0, 242, 254, 0.1);
+  --glow: rgba(0, 242, 254, 0.14);
+  --grid: rgba(230, 237, 243, 0.04);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-surface: var(--surface);
+  --color-surface-elevated: var(--surface-elevated);
+  --color-border: var(--border);
+  --color-foreground: var(--foreground);
+  --color-muted: var(--muted);
+  --color-accent: var(--accent);
+  --color-accent-strong: var(--accent-strong);
+  --color-accent-soft: var(--accent-soft);
+
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+
+  /* Fluid, responsive type scale */
+  --text-display: clamp(2.75rem, 6vw, 5.25rem);
+  --text-display--line-height: 1.04;
+  --text-display--letter-spacing: -0.035em;
+  --text-headline: clamp(1.75rem, 3.5vw, 2.75rem);
+  --text-headline--line-height: 1.12;
+  --text-headline--letter-spacing: -0.02em;
+
+  --radius-card: 1rem;
+}
+
+* {
+  border-color: var(--border);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* Smooth, tasteful theme transition (kept short so it never feels sluggish). */
+body,
+body * {
+  transition-property: background-color, border-color, color, fill, stroke;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+::selection {
+  background-color: var(--accent);
+  color: var(--background);
+}
+
+/* Ambient background: layered radial glow + faint grid, theme-aware. */
+.bg-ambient {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background:
+    radial-gradient(60rem 40rem at 80% -10%, var(--glow), transparent 70%),
+    radial-gradient(40rem 30rem at 0% 0%, var(--glow), transparent 60%);
+}
+
+.bg-ambient::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(to right, var(--grid) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--grid) 1px, transparent 1px);
+  background-size: 64px 64px;
+  mask-image: radial-gradient(circle at 50% 0%, black, transparent 75%);
+}
+
+.text-gradient {
+  background: linear-gradient(120deg, var(--foreground) 30%, var(--accent));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

@@ -1,0 +1,26 @@
+---
+description: Strict TypeScript conventions
+globs: **/*.{ts,tsx}
+alwaysApply: false
+---
+
+# Strict TypeScript
+
+- **No `any`.** Use precise types, generics, or `unknown` + narrowing.
+- Define `interface` / `type` contracts for props, API responses and domain models in `types/`.
+- Prefer `type`-only imports (`import type { Foo }`) to keep bundles lean.
+- Components are typed function components; never rely on implicit `any` props.
+
+## Example
+
+```ts
+// ❌ BAD
+function Card(props: any) { return <div>{props.title}</div> }
+
+// ✅ GOOD
+interface CardProps {
+  title: string;
+  href?: string;
+}
+function Card({ title, href }: CardProps) { /* ... */ }
+```

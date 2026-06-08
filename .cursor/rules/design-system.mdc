@@ -1,0 +1,33 @@
+---
+description: Dark Mode Luxury Tech design system tokens and visual language
+alwaysApply: true
+---
+
+# Design System: Dark Mode Luxury Tech
+
+A premium, restrained, enterprise aesthetic. Define these as Tailwind v4 theme tokens
+using the CSS-first `@theme` block in `app/globals.css` (no `tailwind.config.js`) —
+never hardcode hex values in components.
+
+## Core Tokens
+- **Background (base):** `#0D1117` (deep slate/charcoal).
+- **Surface / elevated:** slightly lighter slate for cards and panels.
+- **Accent highlight:** `#00F2FE` — used sparingly for emphasis, focus, key CTAs.
+- **Text:** pristine high-contrast neutrals; mute secondary text instead of lowering opacity randomly.
+
+## Visual Rules
+- Sharp, intentional borders over heavy shadows.
+- Generous whitespace and a consistent spacing scale.
+- One accent color, used with intent — no rainbow gradients.
+- Motion (Framer Motion) must be subtle, purposeful and fast; respect `prefers-reduced-motion`.
+
+## Examples
+
+```ts
+// ❌ BAD — hardcoded, off-system color
+<div className="bg-[#111] text-[#0ff]" />
+
+// ✅ GOOD — semantic theme tokens
+<div className="bg-background text-foreground" />
+<button className="text-accent ring-accent/40" />
+```
